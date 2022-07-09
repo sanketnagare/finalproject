@@ -5,7 +5,7 @@ function Signup() {
     return(
         <div className='main-div'>
             <div className='image'>
-            <img src={img2} height="400" width="400" alt=""/>
+            <img src={img2} alt=""/>
             </div>
             <div className='login'>
                 <h4>One of us?</h4>
@@ -21,3 +21,5 @@ function Signup() {
         </div>
     )
 }
+
+export default Signup;
