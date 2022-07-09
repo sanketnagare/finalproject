@@ -1,0 +1,48 @@
+.main_div{
+    background-color: rgb(105, 196, 221);
+    height: 97vh;
+    width: 205vh;
+    display:inline;
+    text-align: center;
+    display: flex;
+    justify-content: space-between ;
+  }
+
+  .left_div{
+    height: 20px ;
+    width: 10px;
+    display: inline-block;
+    margin: 50px 100px;
+    margin-top: 150px;
+    
+  }
+  .right_div {
+    background-color: rgb(105, 196, 221);
+    padding: 23px;
+    margin: 300px 150px 200px 15px;
+
+  }
+  button1 {
+    background-color: #256c96; 
+    border: solid grey 2px;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 6px;
+    text-align: justify;
+  }
+  button2 {
+    background-color: #256c96; 
+    border: solid grey 2px;;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 6px;
+  }
+  
