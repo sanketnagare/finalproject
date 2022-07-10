@@ -1,24 +1,26 @@
 import React from "react";
-import Mainpage from "./Mainpage";
-import Signup from "./Signup";
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
+  BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
-function App(){
+import Addcandidate from "./adminpages/addcandidate";
+import Adlogin from "./pages/Adlogin";
+import Mainpage from "./pages/Mainpage";
+import Signup from "./pages/Signup";
+function App() {
 
-  return(
-  <>
+  return (
+    <>
       <Router>
-   <Routes>
-<Route exact path="/" 
-                       element={<Mainpage/>} />
-
-<Route exact path="/signup" 
-        element={<Signup/>} />
-</Routes>
+        <Routes>
+          <Route exact path="/"
+            element={<Mainpage />} />
+          <Route exact path="/signup"
+            element={<Signup />} />
+          <Route exact path="/adlogin"
+            element={<Adlogin />} />
+          <Route exact path="/addcandidate"
+            element={<Addcandidate />} />
+        </Routes>
       </Router>
     </>
   );
