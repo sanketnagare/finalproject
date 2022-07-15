@@ -1,3 +1,12 @@
 /* .main_div{
   background-color: rgb(255, 127, 127);
 } */
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+}

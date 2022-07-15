@@ -21,7 +21,7 @@ const Adlogin = () => {
 
     const Login = details => {
         console.log(details);
-        if (details.email == adminuser.email && details.password == adminuser.password) {
+        if (details.email === adminuser.email && details.password === adminuser.password) {
             setUser({
                 email: details.email,
             });
@@ -44,7 +44,7 @@ const Adlogin = () => {
             <form onSubmit={submitHandler}>
                 <div className="form-inner">
                     <h2>Admin Login </h2>
-                    {(error != "") ? (<div className="error">{error}</div>) : ""}
+                    {(error !== "") ? (<div className="error">{error}</div>) : ""}
                     <div className="form-group">
                         <label htmlFor="email"> Email: </label>
                         <input type="text" name="email" id="email" onChange={e => setDetails({ ...details, email: e.target.value })} value={details.email} />

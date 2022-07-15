@@ -82,14 +82,14 @@ form .form-inner .form-group input {
 }
 
 form .form-inner input[type="submit"] {
-    display: inline-block;
-    padding: 10px 15px;
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
     border-radius: 8px;
-    background-color: #FE4880;
-    background-size: 200%;
-    background-position: 0%;
-    transition: 0.4s;
-    color: black;
-    font-weight: 700;
+    outline: none;
     cursor: pointer;
+    width: -webkit-fill-available;
 }

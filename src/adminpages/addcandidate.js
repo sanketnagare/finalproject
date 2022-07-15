@@ -1,12 +1,14 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
-const addcandidate = () => {
+const Addcandidate = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <h2> Welcome, Admin</h2>
-            <button > Logout </button>
+            <button onClick={() => navigate("/adlogin")} > Logout </button>
         </div>
     )
 }
 
-export default addcandidate;
+export default Addcandidate;
