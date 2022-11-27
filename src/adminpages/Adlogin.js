@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Adlogin.css";
 const Adlogin = () => {
     const navigate = useNavigate();
@@ -8,7 +8,7 @@ const Adlogin = () => {
         password: "admin"
     }
 
-    const [user, setUser] = useState({ name: "", email: "" });
+    // const [user, setUser] = useState({ name: "", email: "" });
     const [error, setError] = useState("");
 
     const [details, setDetails] = useState({ email: "", password: "" });
@@ -22,11 +22,11 @@ const Adlogin = () => {
     const Login = details => {
         console.log(details);
         if (details.email === adminuser.email && details.password === adminuser.password) {
-            setUser({
-                email: details.email,
-            });
+            // setUser({
+            //     email: details.email,
+            // });
             // console.log("logged in");
-            navigate("/addcandidate")
+            navigate("/admindashboard")
 
         }
         else {
@@ -54,6 +54,7 @@ const Adlogin = () => {
                         <input type="password" name="password" id="password" onChange={e => setDetails({ ...details, password: e.target.value })} value={details.password} />
                     </div>
                     <input type="submit" value="LOGIN" />
+                    <Link to={"/"}>go back</Link>
                 </div>
             </form>
 

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import {
   BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
-import Addcandidate from "./adminpages/addcandidate";
 import Adlogin from "./adminpages/Adlogin";
-import Login from "./pages/login/login";
-import Mainpage from "./pages/mainpage/Mainpage";
-import Register from "./pages/register/register";
-import Dashboard from "./userpages/dashboard";
+import Admindashboard from "./adminpages/admindashboard";
+import Dashboard from "./backerpages/backerdashboard/dashboard";
+import Login from "./backerpages/login/login";
+import Mainpage from "./backerpages/mainpage/Mainpage";
+import Register from "./backerpages/register/register";
 function App() {
 
   const [user, setLoginUser] = useState("")
@@ -36,8 +36,8 @@ function App() {
           <Route exact path="/adlogin"
             element={<Adlogin />} />
 
-          <Route exact path="/addcandidate"
-            element={<Addcandidate />} />
+          <Route exact path="/admindashboard"
+            element={<Admindashboard />} />
         </Routes>
       </Router>
     </>
